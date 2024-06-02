@@ -1,0 +1,46 @@
+:root{
+    --text-color-links: #fff;
+    --text-font-headers: 'Montserrat', san-serif; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header .social-banner{
+    min-height: 50px;
+    padding: 8px 24px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 48px;
+    
+    font-family: var(--text-font-headers);
+
+    background-color: #13293D;
+}
+
+.social-banner a{
+    font-size: 18px;
+    text-decoration: none;
+
+    color: var(--text-color-links);
+}
+
+.social-banner .client-area a{
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .social-banner .social-links ul{
+    display: flex;
+    gap: 16px;
+
+    list-style: none;
+}
