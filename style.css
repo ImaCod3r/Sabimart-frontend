@@ -1,46 +1,92 @@
-:root{
-    --text-color-links: #fff;
-    --text-font-headers: 'Montserrat', san-serif; 
-}
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-header .social-banner{
-    min-height: 50px;
-    padding: 8px 24px;
+/* BANNER  */
+.banner{
+    height: 40px;
+    padding: 16px 24px;
 
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 48px;
     
-    font-family: var(--text-font-headers);
+    font-family: "Montserrat", sans-serif;
 
     background-color: #13293D;
 }
 
-.social-banner a{
+.banner a{
     font-size: 18px;
     text-decoration: none;
 
-    color: var(--text-color-links);
+    color: #fff;
 }
 
-.social-banner .client-area a{
-    height: 50px;
-
+.customer a{
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-header .social-banner .social-links ul{
+.social-links {
+    height: inherit;
+    margin-top: 8px;
+    
     display: flex;
-    gap: 16px;
+    align-items: center;
+    gap: 10px;
 
     list-style: none;
+}
+
+/* NAVBAR  */
+.navbar{
+
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* CONTENT */
+main .outdoor{
+    width: 100vw;
+
+    position: relative;
+}
+
+.outdoor::after{
+    display: block;
+    width: 100%;
+    height: 450px;
+
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.outdoor img{
+    width: inherit;
+    height: 450px;
+
+    object-fit: cover;
+}
+
+.outdoor .outdoor-text{
+    display: block;
+    width: 100%;
+
+    position: absolute;
+    
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+
+    transform: translate(-50%, -50%);
+}
+
+.outdoor-text h2{
+    text-align: center;
+
+    color: #fff;
 }
