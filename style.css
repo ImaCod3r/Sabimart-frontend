@@ -53,7 +53,7 @@ main .outdoor{
 .outdoor::after{
     display: block;
     width: 100%;
-    height: 450px;
+    height: 100%;
 
     content: "";
 
@@ -67,7 +67,7 @@ main .outdoor{
 
 .outdoor img{
     width: inherit;
-    height: 450px;
+    height: 300px;
 
     object-fit: cover;
 }
@@ -89,4 +89,17 @@ main .outdoor{
     text-align: center;
 
     color: #fff;
+}
+
+/* REPONSIVIDADE */
+@media screen and (max-width: 750px){
+    .banner{
+        justify-content: space-between;
+    }
+    .banner a{
+        font-size: 12px;
+    }
+    .outdoor img{
+        height: 200px;
+    }
 }
