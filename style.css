@@ -10,7 +10,7 @@
     
     font-family: "Montserrat", sans-serif;
 
-    background-color: #13293D;
+    background-color: #000;
 }
 
 .banner a{
@@ -39,13 +39,12 @@
 
 /* NAVBAR  */
 .navbar{
-
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 /* CONTENT */
 main .outdoor{
-    width: 100vw;
+    width: 100%;
 
     position: relative;
 }
@@ -91,7 +90,84 @@ main .outdoor{
     color: #fff;
 }
 
-/* REPONSIVIDADE */
+main section{
+    margin-top: 52px;
+    padding: 16px;
+}
+
+main section h1{
+    margin-bottom: 32px;
+
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+main section .card-section{
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    gap: 16px;
+}
+
+main section form{
+    margin: 0 16px;
+}
+
+main section form .form-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+
+}
+
+main section form .input-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrapper input{
+    padding: 8px;
+}
+
+.input-wrapper input, 
+.input-wrapper textarea{
+    outline-color: #000;
+}
+
+.input-wrapper label{
+    font-weight: bold;
+}
+
+.input-wrapper textarea{
+
+    height: 100px;
+}
+
+form .submit-button{
+    width: 100px;
+    padding: 8px;
+
+    margin: 22px 0 0;
+    border: none;
+
+    color: #fff;
+    background-color: #000;
+}
+
+footer{
+    height: 50px;
+    margin-top: 48px;
+    padding: 8px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #fff;
+    background-color: #000;
+}
+
+/* RESPONSIVIDADE */
 @media screen and (max-width: 750px){
     .banner{
         justify-content: space-between;
@@ -101,5 +177,9 @@ main .outdoor{
     }
     .outdoor img{
         height: 200px;
+    }
+    main section .card-section{
+        align-items: center;
+        flex-direction: column;
     }
 }
