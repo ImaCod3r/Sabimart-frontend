@@ -91,8 +91,9 @@ main .outdoor{
 }
 
 main section{
-    margin-top: 52px;
-    padding: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin-top: 32px;
+    padding: 0 16px 64px;
 }
 
 main section h1{
@@ -107,6 +108,38 @@ main section .card-section{
     justify-content: center;
     /* flex-wrap: wrap; */
     gap: 16px;
+}
+
+main section.info-banner{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+
+    padding: 0 16px;
+
+    position: relative;
+
+    color: #fff;
+    background-color: #000;
+}
+
+main section.info-banner .text-wrapper{
+    margin: 30px;
+}
+
+.text-wrapper p{
+    color: #ccc;
+}
+
+main section.info-banner .image-wrapper {
+    width: 500px;
+    
+    display: flex;
+    align-items: flex-end;
+}
+
+main section.info-banner .image-wrapper img{
+    width: 100%;
 }
 
 main section form{
@@ -135,6 +168,8 @@ main section form .input-wrapper{
 }
 
 .input-wrapper label{
+    margin-bottom: 8px;
+
     font-weight: bold;
 }
 
