@@ -111,7 +111,7 @@ main section .card-section{
 }
 
 main section.info-banner{
-    height: 300px;
+    min-height: 300px;
     display: flex;
     justify-content: center;
 
@@ -216,5 +216,9 @@ footer{
     main section .card-section{
         align-items: center;
         flex-direction: column;
+    }
+
+    main section form .form-wrapper{
+        grid-template-columns: 1fr;
     }
 }
