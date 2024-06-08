@@ -105,9 +105,9 @@ main section h1{
 
 main section .card-section{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     /* flex-wrap: wrap; */
-    gap: 16px;
+    
 }
 
 .card-section .card{
@@ -168,6 +168,7 @@ main section form .input-wrapper{
 
 .input-wrapper input, 
 .input-wrapper textarea{
+    border: 2px solid #000;
     outline-color: #000;
 }
 
@@ -195,7 +196,7 @@ form .submit-button{
 
 footer{
     height: 50px;
-    margin-top: 48px;
+    margin-top: 20px;
     padding: 8px 0;
 
     display: flex;
@@ -220,10 +221,6 @@ footer{
 
     .outdoor .outdoor-text h2{
         font-size: 18px;
-    }
-
-    main section{
-        padding: 10px 0px;
     }
 
     main section .card-section{
